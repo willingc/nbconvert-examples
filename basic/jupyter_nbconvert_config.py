@@ -1,8 +1,4 @@
 c = get_config()
 
-#Export all the notebooks in the current directory to the sphinx_howto format.
+# Export all the notebooks in the current directory to the default format.
 c.NbConvertApp.notebooks = ['*.ipynb']
-
-#Include dependency files
-c.WriterBase.files = ['cats/mycat.jpg',
-                      'cats/yourcat.jpg']
